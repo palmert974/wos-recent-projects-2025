@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to The Rewind</h1>
+    <p class="lead">Your social movie rating platform</p>
+    
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body p-4">
+                    <h5 class="card-title">Get Started</h5>
+                    <p class="card-text">Join our community to add movies and share ratings!</p>
+                    
+                    @if (Context.Session.GetInt32("userId") == null)
+                    {
+                        <a asp-controller="Account" asp-action="Register" class="btn btn-primary me-2">Sign Up</a>
+                        <a asp-controller="Account" asp-action="Login" class="btn btn-outline-primary">Sign In</a>
+                    }
+                    else
+                    {
+                        <a asp-controller="Movies" asp-action="Index" class="btn btn-primary">Browse Movies</a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

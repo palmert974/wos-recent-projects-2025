@@ -1,0 +1,45 @@
+@model RegisterFormViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+@* Register page
+   - Uses RegisterFormViewModel for inputs and validation
+   - asp-validation-summary="All" shows all ModelState errors at the top *@
+<h1 class="display-4">Register</h1>
+<div asp-validation-summary="All" class="text-danger"></div>
+<div class="card shadow">
+    <div class="card-body">
+        @* Posts to AccountController.ProcessRegisterForm *@
+        <form asp-controller="Account" asp-action="ProcessRegisterForm" method="post">
+            <div class="mb-3">
+                <label asp-for="Username" class="form-label">Username:</label>
+                <input asp-for="Username" class="form-control" />
+                <span class="form-text text-danger" asp-validation-for="Username"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label">Email:</label>
+                <input asp-for="Email" class="form-control" />
+                <span class="form-text text-danger" asp-validation-for="Email"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Password" class="form-label">Password:</label>
+                <input asp-for="Password" class="form-control" />
+                <span class="form-text text-danger" asp-validation-for="Password"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="ConfirmPassword" class="form-label">Confirm Password:</label>
+                <input asp-for="ConfirmPassword" class="form-control" />
+                <span class="form-text text-danger" asp-validation-for="ConfirmPassword"></span>
+            </div>
+            <div class="text-end">
+                <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+        </form>
+    </div>
+    <div class="card-footer text-center">
+        <p class="mb-0 text-muted">Already registered? <a href="/account/login">Log in here.</a></p>
+    </div>
+</div>
+

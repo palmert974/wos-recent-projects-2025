@@ -1,0 +1,95 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TheVinylCountdown
+build_property.RootNamespace = TheVinylCountdown
+build_property.ProjectDir = /Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/Views/Account/ConfirmLogout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Db25maXJtTG9nb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/Views/Account/LoginForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbkZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/Views/Account/ProtectedPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Qcm90ZWN0ZWRQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/Views/Account/RegisterForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3RlckZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/Views/Albums/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWxidW1zL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/Views/Albums/MyAlbums.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWxidW1zL015QWxidW1zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/Views/Albums/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWxidW1zL05ldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/Views/Error/PageNotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXJyb3IvUGFnZU5vdEZvdW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/Views/Error/ServerError.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXJyb3IvU2VydmVyRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/Views/Shared/_Navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19OYXZiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-cq1riaaz1r

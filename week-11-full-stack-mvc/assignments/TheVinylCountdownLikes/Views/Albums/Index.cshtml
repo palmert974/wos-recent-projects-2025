@@ -1,0 +1,112 @@
+@* ASSIGNMENT REQUIREMENT: "Create a view that displays a table of all albums" *@
+@* Strongly typed to a projected view model with like info *@
+@model List<AlbumItemViewModel>
+@{
+    ViewData["Title"] = "All Albums";
+    var userId = Context.Session.GetInt32("userId");
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>🎵 The Vinyl Countdown (with Likes)</h1>
+    @if (userId != null)
+    {
+        <a asp-action="New" class="btn btn-success">
+            <i class="bi bi-plus-circle"></i> Add Album
+        </a>
+    }
+</div>
+
+@if (Model.Count == 0)
+{
+    <div class="alert alert-info">
+        <h4>No albums in the wishlist yet!</h4>
+        @if (userId == null)
+        {
+            <p>Please <a asp-controller="Account" asp-action="LoginForm">login</a> or <a asp-controller="Account" asp-action="RegisterForm">register</a> to add your favorite albums.</p>
+        }
+        else
+        {
+            <p>Be the first to <a asp-action="New">add an album</a> to the wishlist!</p>
+        }
+    </div>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-hover align-middle">
+            <thead>
+                <tr>
+                    <th>
+                        <a asp-action="Index"
+                           asp-route-sort="title"
+                           asp-route-dir="@(ViewBag.CurrentSort == "title" ? ViewBag.NextDir : "asc")"
+                           class="text-decoration-none">
+                            Title
+                            @if (ViewBag.CurrentSort == "title") { <span>@(ViewBag.CurrentDir == "asc" ? "▲" : "▼")</span> }
+                        </a>
+                    </th>
+                    <th>
+                        <a asp-action="Index" asp-route-sort="artist" asp-route-dir="@(ViewBag.CurrentSort == "artist" ? ViewBag.NextDir : "asc")" class="text-decoration-none">
+                            Artist
+                            @if (ViewBag.CurrentSort == "artist") { <span>@(ViewBag.CurrentDir == "asc" ? "▲" : "▼")</span> }
+                        </a>
+                    </th>
+                    <th>
+                        <a asp-action="Index" asp-route-sort="genre" asp-route-dir="@(ViewBag.CurrentSort == "genre" ? ViewBag.NextDir : "asc")" class="text-decoration-none">
+                            Genre
+                            @if (ViewBag.CurrentSort == "genre") { <span>@(ViewBag.CurrentDir == "asc" ? "▲" : "▼")</span> }
+                        </a>
+                    </th>
+                    <th>
+                        <a asp-action="Index" asp-route-sort="year" asp-route-dir="@(ViewBag.CurrentSort == "year" ? ViewBag.NextDir : "asc")" class="text-decoration-none">
+                            Year
+                            @if (ViewBag.CurrentSort == "year") { <span>@(ViewBag.CurrentDir == "asc" ? "▲" : "▼")</span> }
+                        </a>
+                    </th>
+                    <th>Submitted By</th>
+                    <th class="text-center" style="width:160px">Likes</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var album in Model)
+                {
+                    <tr>
+                        <td class="fw-bold">@album.Title</td>
+                        <td>@album.Artist</td>
+                        <td>@(album.Genre ?? "Not specified")</td>
+                        <td>@(album.ReleaseYear?.ToString() ?? "Unknown")</td>
+                        <td><span class="badge bg-primary">@album.Username</span></td>
+                        <td class="text-center">
+                            <div class="d-flex gap-2 justify-content-center align-items-center">
+                                <span class="text-muted">@album.LikeCount</span>
+                                @if (userId != null)
+                                {
+                                    if (!album.LikedByMe)
+                                    {
+                                        <form asp-action="Like" asp-route-id="@album.Id" method="post">
+                                            <button type="submit" class="btn btn-sm btn-outline-primary" title="Like">
+                                                <i class="bi bi-hand-thumbs-up"></i>
+                                            </button>
+                                        </form>
+                                    }
+                                    else
+                                    {
+                                        <form asp-action="Unlike" asp-route-id="@album.Id" method="post">
+                                            <button type="submit" class="btn btn-sm btn-primary" title="Unlike">
+                                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                            </button>
+                                        </form>
+                                    }
+                                }
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="mt-4">
+        <p class="text-muted">Total albums in wishlist: <strong>@Model.Count</strong></p>
+    </div>
+}

@@ -1,0 +1,40 @@
+@model TheRewind.Models.User
+<h2>Profile</h2>
+<div class="card">
+  <div class="card-body">
+    <p><strong>Username:</strong> @Model.Username</p>
+    <p><strong>Movies added:</strong> @ViewBag.MoviesAdded</p>
+    <p><strong>Movies rated:</strong> @ViewBag.RatingsAdded</p>
+  </div>
+</div>
+
+@{ var recent = ViewBag.RecentMovies as List<TheRewind.Models.Movie>; }
+<h3 class="mt-4">Recent Movies</h3>
+@if (recent != null && recent.Count > 0)
+{
+  <div class="table-responsive">
+    <table class="table table-hover align-middle">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Genre</th>
+          <th>Added On</th>
+        </tr>
+      </thead>
+      <tbody>
+        @foreach (var m in recent)
+        {
+          <tr>
+            <td>@m.Title</td>
+            <td>@m.Genre</td>
+            <td>@m.CreatedAt.ToString("MMM d, yyyy")</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+}
+else
+{
+  <p class="text-muted">No recent movies.</p>
+}

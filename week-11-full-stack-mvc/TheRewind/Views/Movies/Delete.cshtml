@@ -1,0 +1,8 @@
+@model TheRewind.Models.Movie
+<h2>Confirm Delete</h2>
+<p>Are you sure you want to delete "@Model.Title"? This action cannot be undone.</p>
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Yes, delete</button>
+    <a asp-action="Details" asp-route-id="@Model.Id" class="btn btn-secondary">Cancel</a>
+</form>

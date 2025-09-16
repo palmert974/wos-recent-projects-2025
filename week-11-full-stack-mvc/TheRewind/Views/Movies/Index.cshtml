@@ -1,0 +1,66 @@
+@model IEnumerable<TheRewind.Models.Movie>
+@{
+    var currentUserId = Context.Session.GetInt32("userId");
+}
+<h2>All Movies</h2>
+
+@if (ViewBag.IsLoggedIn == true)
+{
+    <p>
+        <a class="btn btn-primary" asp-action="Create">Add Movie</a>
+    </p>
+}
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">
+        <h4>No movies yet!</h4>
+        <p>Be the first to add a movie to our collection.</p>
+        @if (ViewBag.IsLoggedIn != true)
+        {
+            <p><a asp-controller="Account" asp-action="Login">Sign in</a> or <a asp-controller="Account" asp-action="Register">Sign up</a> to add movies.</p>
+        }
+    </div>
+}
+else
+{
+    <table class="table table-hover align-middle">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Rating</th>
+                <th>Added By</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var m in Model)
+        {
+            <tr>
+                <td class="fw-semibold">@m.Title</td>
+                <td>@m.Genre</td>
+                <td>
+                    @if (m.Ratings.Any())
+                    {
+                        <span class="badge bg-warning text-dark">@m.Ratings.Average(r => r.Value).ToString("0.0") ⭐</span>
+                    }
+                    else
+                    {
+                        <span class="text-muted">No ratings</span>
+                    }
+                </td>
+                <td>@m.User?.Username</td>
+                <td class="d-flex gap-2">
+                    <a asp-action="Details" asp-route-id="@m.Id" class="btn btn-sm btn-outline-info">View</a>
+                    @if (currentUserId.HasValue && currentUserId.Value == m.UserId)
+                    {
+                        <a asp-action="Edit" asp-route-id="@m.Id" class="btn btn-sm btn-warning">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@m.Id" class="btn btn-sm btn-danger">Delete</a>
+                    }
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

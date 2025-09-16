@@ -1,0 +1,13 @@
+@model string
+@{
+    ViewData["Title"] = "Protected Content";
+}
+
+<div class="text-center">
+    <h1 class="display-4">🔒 VIP Backstage Pass</h1>
+    <p class="lead">Welcome to the exclusive area, @Model!</p>
+    <p>This page is only accessible to authenticated users.</p>
+    <a asp-controller="Albums" asp-action="MyAlbums" class="btn btn-primary">
+        <i class="bi bi-music-note-list"></i> View Your Albums
+    </a>
+</div>

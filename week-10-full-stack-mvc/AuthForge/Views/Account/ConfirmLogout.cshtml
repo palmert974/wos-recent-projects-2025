@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Confirm Logout";
+}
+
+@* Two-step logout confirmation (GET /account/logout)
+   Submits to POST /account/logout/process which clears session and shows a message *@
+<h1 class="display-4">Confirm Logout</h1>
+<p class="lead">Are you sure you want to log out?</p>
+
+<form asp-action="LogoutProcess" asp-controller="Account" method="post">
+    <button type="submit" class="btn btn-outline-primary">Log out</button>
+</form>
+

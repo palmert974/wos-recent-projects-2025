@@ -1,0 +1,97 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/obj/Debug/net8.0/scopedcss/projectbundle/TheVinylCountdown.bundle.scp.css",
+      "PackagePath": "staticwebassets/TheVinylCountdown.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/wwwroot/css/site-authforge.css",
+      "PackagePath": "staticwebassets/css/site-authforge.css"
+    },
+    {
+      "Id": "/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/wwwroot/css/site.css.teacher",
+      "PackagePath": "staticwebassets/css/site.css.teacher"
+    },
+    {
+      "Id": "/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/tamarapalmer/2025-wos/week-10-full-stack-mvc/assignments/TheVinylCountdown/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.TheVinylCountdown.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.TheVinylCountdown.props",
+      "PackagePath": "build\\TheVinylCountdown.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.TheVinylCountdown.props",
+      "PackagePath": "buildMultiTargeting\\TheVinylCountdown.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.TheVinylCountdown.props",
+      "PackagePath": "buildTransitive\\TheVinylCountdown.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

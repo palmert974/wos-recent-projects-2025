@@ -1,0 +1,58 @@
+@{
+    ViewData["Title"] = "The Vinyl Countdown";
+    var userId = Context.Session.GetInt32("userId");
+}
+
+<div class="text-center">
+    <h1 class="display-3">🎵 The Vinyl Countdown 🎵</h1>
+    <p class="lead">Your ultimate album wishlist tracker</p>
+    
+    <div class="mt-5">
+        @if (userId == null)
+        {
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow-lg">
+                        <div class="card-body p-5">
+                            <h3>Join the community of music lovers!</h3>
+                            <p>Create your personal album wishlist and discover what others are listening to.</p>
+                            <div class="mt-4">
+                                <a asp-controller="Account" asp-action="RegisterForm" class="btn btn-primary btn-lg me-3">
+                                    Get Started
+                                </a>
+                                <a asp-controller="Account" asp-action="LoginForm" class="btn btn-outline-dark btn-lg">
+                                    Login
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow-lg">
+                        <div class="card-body p-5">
+                            <h3>Welcome back, @Context.Session.GetString("username")!</h3>
+                            <p>Ready to expand your vinyl collection?</p>
+                            <div class="mt-4">
+                                <a asp-controller="Albums" asp-action="Index" class="btn btn-primary btn-lg me-3">
+                                    Browse Albums
+                                </a>
+                                <a asp-controller="Albums" asp-action="New" class="btn btn-success btn-lg">
+                                    Add New Album
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    
+    <div class="mt-5">
+        <p class="text-muted">Build your dream vinyl collection, one album at a time.</p>
+    </div>
+</div>

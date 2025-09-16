@@ -1,0 +1,62 @@
+@model LoginFormViewModel
+@{
+    ViewData["Title"] = "Log in";
+    var error = Model.Error;
+    var message = Model.Message;
+}
+
+@* Login page
+   - Shows a logout success message via ?message=logout-successful
+   - Shows errors via ?error=invalid-credentials or ?error=not-authenticated
+   - Posts to AccountController.ProcessLogin (teacher style) *@
+<h1 class="display-4">Log in</h1>
+
+@if (!string.IsNullOrEmpty(message) && message == "logout-successful")
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <span>You have been successfully logged out.</span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (error is not null)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        @if (error == "invalid-credentials")
+        {
+            <strong>Invalid credentials. Please try again.</strong>
+        }
+        else if (error == "not-authenticated")
+        {
+            <strong>You must be logged in to view that page.</strong>
+        }
+        else
+        {
+            <strong>Oops! Something went wrong.</strong>
+        }
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+<div class="card shadow">
+    <div class="card-body">
+        <form asp-controller="Account" asp-action="ProcessLogin" method="post">
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label">Email:</label>
+                <input asp-for="Email" class="form-control" />
+                <span class="form-text text-danger" asp-validation-for="Email"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Password" class="form-label">Password:</label>
+                <input asp-for="Password" class="form-control" />
+                <span class="form-text text-danger" asp-validation-for="Password"></span>
+            </div>
+            <div class="text-end">
+                <button type="submit" class="btn btn-primary">Log in</button>
+            </div>
+        </form>
+    </div>
+</div>
+

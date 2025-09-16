@@ -1,0 +1,57 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Improve focus visibility */
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px; /* space for footer when absolute */
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+
+/* Album cards styling */
+.album-card {
+  transition: transform 0.2s;
+}
+
+.album-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Sortable table headers */
+thead th a {
+  color: inherit;
+  transition: all 0.2s;
+}
+
+thead th a:hover {
+  color: #0d6efd;
+  text-decoration: none !important;
+}
+
+/* Active sort column */
+thead th a span {
+  margin-left: 5px;
+  font-size: 0.9em;
+}
