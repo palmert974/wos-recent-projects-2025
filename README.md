@@ -8,7 +8,7 @@ My recent **Web of Skills** full-stack MVC projects completed during weeks 10-11
 - **AuthForge** - Authentication system with user registration/login
 - **TheVinylCountdown** - Vinyl record collection manager
 
-### Week 11 - Advanced Relationships & Assessment
+### Week 11 - Advanced Relationships & Assessment  
 - **TheRewind** - ⭐ **Assessment Project** - Complete movie review platform with ratings
 - **TheVinylCountdownLikes** - Enhanced vinyl app with like functionality
 
@@ -16,7 +16,7 @@ My recent **Web of Skills** full-stack MVC projects completed during weeks 10-11
 
 - **Backend**: ASP.NET Core MVC (.NET 8.0)
 - **Database**: MySQL with Entity Framework Core
-- **Frontend**: Bootstrap 5.3 (Dark Theme)
+- **Frontend**: Bootstrap 5.3 (Dark Theme)  
 - **Authentication**: Session-based with BCrypt password hashing
 - **Architecture**: MVC pattern with ViewModels and Services
 
@@ -30,9 +30,9 @@ All projects target **Exemplary (4 pts)** across these categories:
 5. **Form Validation** - Data annotations, error handling, user feedback
 6. **Code Quality** - Async/await, clean architecture, best practices
 
-## 📋 Universal Patterns
+## 📋 Development Patterns
 
-See `CLAUDE.md` for comprehensive development patterns and templates used across all projects.
+Each project follows established MVC patterns and best practices for consistent, maintainable code.
 
 ## 🚀 Getting Started
 
@@ -40,7 +40,7 @@ Each project includes:
 - MySQL connection with `rootroot` password
 - Bootstrap dark theme with local assets
 - Complete authentication system
-- CRUD operations with proper validation
+- CRUD operations with proper validation 
 - Foreign key authorization checks
 - Professional error handling
 
